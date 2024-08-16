@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="funsubmit()">
+      Email : <input type="email" id="input"
+      id="input" onfocus="chng_clr()"" onblur = "offBlur()" onmouseover="chng_clr()" onmouseleave="offBlur()">
+      <input type="submit">
+    </form>
+  
+
+
+  <script>
+    const input = document.getElementById('input');
+function chng_clr(){
+  input.style.backgroundColor = 'red';
+}
+function offBlur(){
+  input.style.backgroundColor = 'white';
+}
+function funsubmit(){
+  alert('Submitted');
+}
+  </script>
+</body>
+</html>
